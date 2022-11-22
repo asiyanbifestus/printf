@@ -25,7 +25,7 @@ while (num > 0)
 {
 buffer[i--] = (num % 10) + '0';
 num /= 10;
-}i++;
+} i++;
 
 return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
@@ -82,12 +82,12 @@ return (print_hexa(types, "0123456789abcdef", buffer,
 flags, 'x', width, precision, size));
 }
 
-/* To print unsigned integers in upper HEXADECIMAL */ 
+/* To print unsigned integers in upper HEXADECIMAL */
 /**
  * print_hexa_upper - Prints an unsigned number in upper hexadecimal notation
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags: Calculates active flags
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
